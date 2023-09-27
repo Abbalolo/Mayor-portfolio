@@ -64,13 +64,15 @@ darkBtn && darkBtn.addEventListener("click", ( )=> {
 const blur = document.querySelector(".menu-blur")
 const menuBar = document.querySelector(".menubar")
 const navbar = document.querySelector(".nav-con")
+
 menuBar.innerHTML = `<i class="fas fa-bars"></i>`
 menuBar && menuBar.addEventListener("click", () => {
 
 if(menuBar.innerHTML ===`<i class="fas fa-bars"></i>`) {
     menuBar.innerHTML = `<i class="fas fa-times close"></i>`
     navbar.classList.add("show-nav")
-} else {menuBar.innerHTML =`<i class="fas fa-bars"></i>`
+} else {
+menuBar.innerHTML =`<i class="fas fa-bars"></i>`
 navbar.classList.remove("show-nav")
 } 
 
@@ -79,8 +81,20 @@ navbar.classList.remove("show-nav")
 
 const closebtn = document.querySelector(".close")
 closebtn && closebtn.addEventListener("click", () => {
-
+    navbar.classList.remove("show-nav")
 })
+
+const navLinks = document.querySelectorAll(".nav-link");
+
+function toggleNavbar() {
+    menuBar.innerHTML =`<i class="fas fa-bars"></i>`
+    navbar.classList.remove("show-nav")
+}
+
+
+navLinks.forEach(link => {
+    link.addEventListener("click", toggleNavbar);
+});
 
 
 
