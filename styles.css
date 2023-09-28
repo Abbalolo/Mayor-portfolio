@@ -1668,9 +1668,14 @@ footer .socials-con {
         margin-left: .7em;
     }
 
+   
+    .edu-content-con .content-head p{
+        width: 75%;
+    }
     .edu-content-con .content-head span {
-        padding: .3em;
-        font-size: 14px;
+     width: 32%;
+     text-align: center;
+     
     }
 
   
