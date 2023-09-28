@@ -1730,6 +1730,10 @@ footer .socials-con {
        padding-bottom: 1em;
     }
 
+    .connect .right .input-con {
+        flex-direction: column;
+    }
+
     .question .right {
         display: none;
      }
