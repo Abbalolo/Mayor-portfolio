@@ -1609,7 +1609,7 @@ footer .socials-con {
 
     .main .hero2 {
         padding: 0em;
-        margin: 3em 1em;
+        margin: 2.5em 1em;
     }
     .main .right-con {
         display: none;
@@ -1662,7 +1662,7 @@ footer .socials-con {
         animation: fadeIn 3s;
     }
     .design .buttom-design-con {
-        padding: 2em;
+        padding: 1em;
         margin-top: 1em;
     }
 
@@ -1674,6 +1674,10 @@ footer .socials-con {
         min-width: 400px;
     }
 
+    .connect {
+        padding: 1em;
+    }
+
     .question .left{
         width: 100%;
         font-size: 16px;
@@ -1683,11 +1687,17 @@ footer .socials-con {
         padding: 1em;
     }
 
+    footer{
+        padding: 1em;
+        }
+
     footer .footer-content {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+
+
     
   }
