@@ -315,7 +315,8 @@ background-color: var(--primary);
   top: -20px;
   right:  calc(100% + 15px);
   z-index: 3;
-  background: #fff;
+  background: var(--card-bg);
+  color: var(--text);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   padding: 6px 12px;
   border-radius: 4px;
@@ -348,7 +349,7 @@ background-color: var(--primary);
   /* background: #11101D; */
 }
 .sidebar li a:hover{
-  background: #FFF;
+  background: var(--card-bg);
 }
 .sidebar li a .links_name{
   color: var(--text);
@@ -615,20 +616,15 @@ color: var(--text);
 
 
 .navbar{
-    background-color: var(--primary);
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     padding: 1em;
-      /* position:fixed;
+      position:fixed;
     width: 100%;
     top: 0;
-    left: 0; */
+    left: 0;
     z-index: 20;
-}
-
-.shadow{
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .fa-sun {
@@ -1377,6 +1373,15 @@ footer .socials-con {
   
 
   @media only screen and (max-width: 768px) {
+    
+
+    .sidebar{
+        display: none;
+    }
+
+    .main, .aside1{
+        box-shadow: unset;
+    }
     .main .left-con h1 {
         font-size: 30px;
         color: var(--text);
@@ -1394,7 +1399,7 @@ footer .socials-con {
     .close{
         z-index: 50;
     }
-    /* .menu-blur{
+    .menu-blur{
        position: absolute;
        top: 0;
        left: 0;
@@ -1402,7 +1407,17 @@ footer .socials-con {
        height: 100%;
        backdrop-filter: blur(4px);
        z-index: 10;
-    } */
+       display: none;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .shadow{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: var(--primary);
+    }
 
     nav{
         background-color:var(--primary);
@@ -1410,7 +1425,7 @@ footer .socials-con {
         width: 100%;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 50vh;
         z-index: 40;
         transition:  1s;
         transform: translateY(-100%);
@@ -1439,27 +1454,36 @@ footer .socials-con {
         display: flex;
         flex-direction: column-reverse;
         padding: 0em;
-  
+        margin: 0;
+        gap: 0px;
         
     }
 
+
+
     .aside1 {
-        /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
         width: 100%;
-        padding: 1.5em;
-     }
-
+        padding: 0 2em;
+        animation: fadeInLeft .6s;
+        border-radius: 0;
+    }
      .education .buttom-section {
-
         padding: 2em;
         margin-top: 2em;
     }
 
 
 
-     .education .all-flex-con {
+    .education .all-flex-con {
+        display: flex;
         flex-direction: column;
-        margin: 2em;
+        justify-content: space-between;
+        gap: 30px;
+        padding:1em 2em;
+    }
+
+    .education .content-flex-con {
+        width: 100%;
     }
 
     .education .edu-content-con .content-head {
@@ -1527,8 +1551,19 @@ footer .socials-con {
         
     }
 
+    .connect .right input, textarea {
+        width: 100%;
+        height: 40px;
+        padding: .5em 1em;
+
+    }
+
     .connect .left {
         width: 100%;
+    }
+
+    .question {
+        padding: 2em;
     }
 
     .question .question-con {
@@ -1544,6 +1579,11 @@ footer .socials-con {
     .question .right {
        display: none;
     }
+
+    .quest-p {
+    font-size: 16px;
+
+}
 
   
     .footer-content .content-con{
@@ -1584,8 +1624,7 @@ footer .socials-con {
     } */
 
     .education .all-flex-con {
-        flex-direction: column;
-        margin: 1em;
+        padding: 1em;
     }
     .education h2 {
         text-align: start;
@@ -1594,7 +1633,7 @@ footer .socials-con {
 
     .edu-content-con .content-head span {
         padding: .3em;
-        font-size: 12px;
+        font-size: 14px;
     }
 
   

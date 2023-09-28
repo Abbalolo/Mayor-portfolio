@@ -46,6 +46,7 @@ toggleHeaderShadow();
 
 
 const darkBtn = document.querySelector(".darkmode-toggle");
+const sideDarkBtn = document.querySelector(".side-darkmode-toggle");
 
 darkBtn.innerHTML = `<i class="fas fa-moon moon"></i>`
 darkBtn && darkBtn.addEventListener("click", ( )=> {
@@ -54,6 +55,16 @@ darkBtn && darkBtn.addEventListener("click", ( )=> {
         document.body.classList.add("dark") 
     } else {
         darkBtn.innerHTML = `<i class="fas fa-moon moon"></i>`
+        document.body.classList.remove("dark")
+    }
+})
+sideDarkBtn.innerHTML = `<i class="fas fa-moon moon"></i>`
+sideDarkBtn && sideDarkBtn.addEventListener("click", ( )=> {
+    if(sideDarkBtn.innerHTML === `<i class="fas fa-moon moon"></i>`){
+        sideDarkBtn.innerHTML = `<i class="fas fa-sun sun"></i>`
+        document.body.classList.add("dark") 
+    } else {
+        sideDarkBtn.innerHTML = `<i class="fas fa-moon moon"></i>`
         document.body.classList.remove("dark")
     }
 })
@@ -68,11 +79,17 @@ menuBar && menuBar.addEventListener("click", () => {
 if(menuBar.innerHTML ===`<i class="fas fa-bars"></i>`) {
     menuBar.innerHTML = `<i class="fas fa-times close"></i>`
     navbar.classList.add("show-nav")
+    blur.style.display = "flex"
 } else {
 menuBar.innerHTML =`<i class="fas fa-bars"></i>`
 navbar.classList.remove("show-nav")
+blur.style.display = "none"
 } 
 
+})
+
+blur && blur.addEventListener("click", () => {
+    navbar.classList.remove("show-nav")
 })
 
 
@@ -86,6 +103,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 function toggleNavbar() {
     menuBar.innerHTML =`<i class="fas fa-bars"></i>`
     navbar.classList.remove("show-nav")
+    blur.style.display = "none"
 }
 
 
