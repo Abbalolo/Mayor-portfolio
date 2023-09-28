@@ -440,6 +440,7 @@ padding: .7em 1em 0 .7em;
 }
 .main .left-con .btn-con .play-btn button{
  background-color: var(--secondary2);
+ width: 150px;
  cursor: pointer;
 
 }
