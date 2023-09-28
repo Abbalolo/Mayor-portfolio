@@ -1,3 +1,4 @@
+let sidebar = document.querySelector(".sidebar");
 
 const plusp = document.querySelectorAll(".plus");
 const para = document.querySelectorAll(".quest-p");
@@ -30,8 +31,6 @@ para.forEach(paragraph => {
 
 
 const header = document.querySelector('.navbar');
-
-// Function to add or remove the shadow class based on scroll position
 function toggleHeaderShadow() {
     if (window.scrollY > 0) {
         header.classList.add('shadow');
@@ -40,10 +39,8 @@ function toggleHeaderShadow() {
     }
 }
 
-// Add scroll event listener to trigger the function
 window.addEventListener('scroll', toggleHeaderShadow);
 
-// Initial check for shadow class on page load
 toggleHeaderShadow();
 
 
@@ -96,36 +93,6 @@ navLinks.forEach(link => {
     link.addEventListener("click", toggleNavbar);
 });
 
-
-
-// let currentCardsIndex = 0;
-// const cards = document.querySelectorAll('.testimonial-card');
-// const cardContainer = document.querySelector('.testimonial-card-con');
-
-// function showCards(index) {
-//     const offset = index * cards[0].clientWidth * -1;
-//     cardContainer.style.transform = `translateX(${offset}px)`;
-// }
-
-// function prevCards() {
-//     currentCardsIndex = (currentCardsIndex - 1 + cards.length) % cards.length;
-//     showCards(currentCardsIndex);
-// }
-
-// function nextCards() {
-//     currentCardsIndex = (currentCardsIndex + 1) % cards.length;
-//     showCards(currentCardsIndex);
-// }
-
-// showCards(currentCardsIndex); 
-
-// const testLeft = document.querySelector(".fa-arrow-left-long")
-// const testRight = document.querySelector(".fa-arrow-right-long")
-
-// testLeft && testLeft.addEventListener("click", prevCards)
-// testRight && testRight.addEventListener("click", nextCards)
-
-
 const prevButton = document.querySelector(".fa-arrow-left-long")
 const nextButton = document.querySelector(".fa-arrow-right-long")
 const cardContainer = document.querySelector('.testimonial-card-con');
@@ -154,3 +121,9 @@ nextButton.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+
+
+
+
+

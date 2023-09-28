@@ -11,36 +11,11 @@
     <title>moyo</title>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">Mayo</div>
-        <nav class="nav-con">
-        <ul class="pages-con">
-            <div></div>
-            <!-- <i class="fas fa-times close"></i> -->
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#service" class="nav-link">Service</a></li>
-            <li><a href="#resume" class="nav-link">Resume</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#project" class="nav-link">Project</a></li>
-            <li><a href="#contact" class="nav-link">Contact Me</a></li>
-           </ul>
-        </nav>
-        <div class="menu-con">
-            <div class="darkmode-toggle">
-                <i class="fas fa-sun sun"></i>
-               </div>
-               <div class="menubar-con">
-                <div class="menubar"></div>
-               </div>
-              
-        </div>
-           
-
-            
-    </header>
+    
     <div id="home" class="container">
         <!-- home section -->
         <section class="hero1">
+            
             <aside class="aside1">
                 <div class="image-con">
                     <img src="./assets/Rectangle 4.png" alt="moyo">
@@ -172,6 +147,30 @@
             </aside>
 
             <main class="main">
+                <!-- <header class="navbar">
+                    <nav class="nav-con">
+                    <ul class="pages-con">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#service" class="nav-link">Service</a></li>
+                        <li><a href="#resume" class="nav-link">Resume</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#project" class="nav-link">Project</a></li>
+                        <li><a href="#contact" class="nav-link">Contact Me</a></li>
+                       </ul>
+                    </nav>
+                    <div class="menu-con">
+                        <div class="darkmode-toggle">
+                            <i class="fas fa-sun sun"></i>
+                           </div>
+                           <div class="menubar-con">
+                            <div class="menubar"></div>
+                           </div>
+                          
+                    </div>
+                       
+            
+                        
+                </header> -->
                 <div class="hero2">
                 <div class="left-con">
                     <button class="hel">Hello!</button>
@@ -204,8 +203,10 @@
 
                 </div>
                 <div class="right-con">
-                    <div class="fancy-border-radius"></div>
-                    <img class="right-img" src="./assets/heroimg.png" alt="">
+                    <div class="fancy-border-radius">
+                        <img class="right-img" src="./assets/heroimg.png" alt="">
+                    </div>
+
                 </div>
             </div>
             
@@ -214,6 +215,14 @@
                
                <div class="card-con">
 
+                <div class="card">
+                        <h4>App Design</h4>
+                        <hr>
+                        <div class="card-img-con">
+                        <p>I specialize in crafting web experiences that harmonize aesthetics, intuitive navigation, and performance optimization, while constantly pushing the boundaries of design innovation.</p>
+                        <img src="./assets/Rectangle 33.png" alt="card-photo">
+                    </div>
+                </div>
                 <div class="card">
                         <h4>App Design</h4>
                         <hr>
@@ -234,9 +243,66 @@
                 </div>
 
                </div>
-            </div>
+            
 
             </main>
+
+            <div class="sidebar">
+                <ul class="nav-list">
+                  <li>
+                   <a href="#">
+                    <div class="menubar-con">
+                        <div class="menubar"></div>
+                       </div>
+                     <span class="links_name">Darkmode</span>
+                   </a>
+                   <span class="tooltip">Dark</span>
+                 </li>
+                 <li>
+                   <a href="#">
+                    <i class="fa-solid fa-house-user"></i>
+                     <span class="links_name">Home</span>
+                   </a>
+                   <span class="tooltip">Home</span>
+                 </li>
+                 <li>
+                   <a href="#">
+                    <i class="fa-solid fa-list"></i>
+                     <span class="links_name">Service</span>
+                   </a>
+                   <span class="tooltip">Service</span>
+                 </li>
+                 <li>
+                   <a href="#">
+                    <i class="fa-solid fa-file"></i>
+                     <span class="links_name">Resume</span>
+                   </a>
+                   <span class="tooltip">Resume</span>
+                 </li>
+                 <li>
+                   <a href="#">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                     <span class="links_name">About</span>
+                   </a>
+                   <span class="tooltip">About</span>
+                 </li>
+                 <li>
+                   <a href="#">
+                    <i class="fa-solid fa-grip-vertical"></i>
+                     <span class="links_name">Project</span>
+                   </a>
+                   <span class="tooltip">Project</span>
+                 </li>
+                 <li>
+                   <a href="#">
+                    <i class="fa-solid fa-address-book"></i>
+                     <span class="links_name">Contact Me</span>
+                   </a>
+                   <span class="tooltip">Contact</span>
+                 </li>
+                </ul>
+              </div>
+              
         </section>
 
 
@@ -340,7 +406,7 @@
             </div>
            
             <div class="right-content-con">
-                <h3>Why You Should <span class="secondary2">Hire Me</span> For <br>
+                <h2>Why You Should <span class="secondary2">Hire Me</span> For <br>
                     Your Next Projects?</h3>
 
                     <p>Hire me for your next projects because I bring a wealth of experience and a passion for innovative web and app design. I blend aesthetics with user-centric functionality, ensuring your projects not only look great but also engage and resonate with your target audience, driving success and growth.</p>
@@ -355,7 +421,10 @@
                             <p>Industry Covered</p>
                         </div>
                     </div>
-                    <button class="hire-btn"><i class="fas fa-arrow-right"></i>Hire Me Now</button>
+                    <div class="hire-btn">
+                        <button class="hire-btn"><i class="fas fa-arrow-right"></i>Hire Me Now</button>
+                    </div>
+                    
             </div>
         </div>
 
@@ -364,7 +433,7 @@
 
         <!-- design process section -->
         <section id="project" class="design">
-            <h3>My Design <span class="secondary2">Process</span></h3>
+            <h2>My Design <span class="secondary">Process</span></h2>
             
             <div class="design-content-con">
 
@@ -408,8 +477,8 @@
         </div>
 
         <div class="buttom-design-con" id="portfolio">
-            <h3>Let’s Have a Look at <br>
-                my <span class="secondary2">Portfolio</span></h3>
+            <h2>Let’s Have a Look at <br>
+                my <span class="secondary2">Portfolio</span></h2>
 
                 <div class="image-con">
                     <div class="arrows">
@@ -439,8 +508,8 @@
 
         <!-- testimonials section -->
         <section class="testimonials">
-            <h3>Testimonials that <br>
-                Speak to My <span class="secondary">Results</span></h3>
+            <h2>Testimonials that <br>
+                Speak to My <span class="secondary">Results</span></h2>
 
                 <div class="testimonial-card-con">
                     <div class="testimonial-card">
@@ -539,10 +608,11 @@
 
         <!-- contact section -->
         <section id="contact" class="connect">
-            <h3>Let’s <span class="secondary2">Connect</span> &<br>
-                <span class="secondary2">Collaborate</span></h3>
+            
                 <div class="connect-con">
             <div class="left">
+                <h2>Let’s <span class="secondary2">Connect</span> &<br>
+                    <span class="secondary2">Collaborate</span></h3>
                     <p>Let's connect and collaborate to create outstanding web and app designs that elevate your brand and engage your audience – together, we'll bring your vision to life.</p>
 
                     <div class="socials-con">
@@ -587,7 +657,7 @@
 
                <input type="text" id="subject" name="subject" placeholder="Subject" required>
                
-               <textarea name="message" id="message" cols="4" rows="5" placeholder="Message">message</textarea>
+               <textarea name="message" id="message" cols="10" rows="30" placeholder="Message"></textarea>
                
                <div class="play-btn">
                 <i class="fas fa-play play"></i>
