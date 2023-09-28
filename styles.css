@@ -433,7 +433,6 @@ padding: .7em 1em 0 .7em;
    background-color: var(--secondary);
    width: 155px;
    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-   
    border-radius: 20px;
    display: flex;
    justify-content: flex-end;
@@ -1372,7 +1371,7 @@ footer .socials-con {
   }
   
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 840px) {
     
 
     .sidebar{
@@ -1381,6 +1380,9 @@ footer .socials-con {
 
     .main, .aside1{
         box-shadow: unset;
+    }
+    .main .hero2 {
+        margin:1em 1em 0 1em;
     }
     .main .left-con h1 {
         font-size: 30px;
@@ -1463,10 +1465,39 @@ footer .socials-con {
 
     .aside1 {
         width: 100%;
-        padding: 0 2em;
+        padding: 1em 2em;
         animation: fadeInLeft .6s;
         border-radius: 0;
     }
+
+    .aside1 .icons-con {
+    all: unset;
+}
+
+
+    .aside1 .aside-header{
+  display: flex;
+  justify-content: flex-start;
+ gap: 3em;
+}
+.aside1 .image-con {
+    width: 100px;
+    height: auto;
+    margin:unset;
+}
+.aside1 h3 {
+    margin: 0;
+    text-align: start;
+}
+
+.aside1 p {
+    margin-bottom: 0em;
+    text-align: start;
+}
+
+.aside1 .moyo-details {
+  all: unset;
+}
      .education .buttom-section {
         padding: 2em;
         margin-top: 2em;
@@ -1497,9 +1528,16 @@ footer .socials-con {
         height: 200px;
     }
 
+ 
     .buttom-section .right-content-con {
         padding: 0 ;
         animation: fadeInRight 1s;
+    }
+
+    .design .buttom-design-con {
+        padding: 2em;
+        margin-top: 1em;
+        
     }
 
     .buttom-section .right-content-con p {
@@ -1567,7 +1605,7 @@ footer .socials-con {
     }
 
     .question .question-con {
-        flex-direction: column;
+       
     }
    
     .question .left {
@@ -1576,9 +1614,7 @@ footer .socials-con {
         width: 100%;
     }
 
-    .question .right {
-       display: none;
-    }
+
 
     .quest-p {
     font-size: 16px;
@@ -1687,6 +1723,10 @@ footer .socials-con {
     .connect .connect-con {
        padding-bottom: 1em;
     }
+
+    .question .right {
+        display: none;
+     }
 
     .question .left{
         width: 100%;
