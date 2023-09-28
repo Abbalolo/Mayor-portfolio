@@ -1684,6 +1684,9 @@ footer .socials-con {
         border-radius: 20px;
         background-color: var(--gary-gb);
     }
+    .connect .connect-con {
+       padding-bottom: 1em;
+    }
 
     .question .left{
         width: 100%;
