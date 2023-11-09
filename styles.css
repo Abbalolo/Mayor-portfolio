@@ -39,6 +39,7 @@ overflow-x: hidden;
 
 
 
+
 .hero1 {
     display: grid;
     grid-template-columns:repeat(3, auto);
@@ -256,10 +257,14 @@ overflow-x: hidden;
     justify-content: center;
     margin-top: 1em;
 }
-.aside1-btn button{
+.aside1-btn a{
     background-color: var(--secondary2);
     border: none;
     padding: .7em;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -461,7 +466,7 @@ padding: .7em 1em 0 .7em;
    color: var(--text);
 
 }
-.main .left-con .btn-con button a.portfolio{
+.main .left-con .btn-con button a.portfolio-btn{
     text-decoration: none;
    color: black;
 
@@ -744,12 +749,14 @@ padding: 0 6em;
     align-items: center;
     margin: 1em 0;
 }
-.education .edu-btn button{
+.education .edu-btn a{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 1em 2em;
+    text-decoration: none;
+    color: black;
+    padding: .5em 2em;
     background-color: var(--secondary2);
     border: none;
     border-radius: 20px;
@@ -906,8 +913,6 @@ margin-right: .5em;
 
 .portfolio .buttom-design-con {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     color: white;
    transition: transform 0.3s ease;
     overflow: hidden;
@@ -926,9 +931,9 @@ margin-right: .5em;
 
 
 
-.portfolio.buttom-design-con h2{
+.portfolio h2{
    text-align: start;
-   margin: .5em 0;
+   padding: .5em 2em;
    color: white;
 
 }
@@ -958,14 +963,7 @@ margin-right: .5em;
  
 }
 
-/* .buttom-design-con .fa-angle-left{
-   position: absolute;
-   left: 1em;
-}
-.buttom-design-con .fa-angle-right{
-    position: absolute;
-    right: 1em;
-} */
+
 
 .buttom-design-con .skills-con {
     margin: 1em 0;
@@ -1572,11 +1570,6 @@ footer .socials-con {
         animation: fadeInRight 1s;
     }
 
-    .design .buttom-design-con {
-        padding: 2em;
-        margin-top: 1em;
-        
-    }
 
     .buttom-section .right-content-con p {
         margin: .6em 0;
@@ -1595,30 +1588,22 @@ footer .socials-con {
         flex-direction: column;
         gap: 2em;
     }
-    .design .buttom-design-con {
-       flex-direction: column;
+    .portfolio .buttom-design-con {
+        flex-direction: column;
         overflow: hidden;
-        gap: 20px;
     }
-    .design .buttom-design-con .design-buttom-wrapper{
+    .portfolio .buttom-design-con .design-buttom-wrapper{
         scroll-snap-align: center;
         padding: 2em;
     
     }
+
+    .portfolio .arrows{
+    display: none;
+}
     
    
-
-    .design .buttom-design-con .design-buttom-wrapper:nth-child(3){
- gap: 30px;
-
-}
    
-
-    /* .design-content-con .design-image-con {
-        width: 70px;
-        height: 50px;
-        animation: fadeIn 3s;
-    } */
 
     .svg-arrow{
         display: none;
@@ -1737,6 +1722,17 @@ footer .socials-con {
        display: none;
     }
 
+    .portfolio  .buttom-design-con {
+        flex-direction: column;
+    }
+    .portfolio  .buttom-design-con .design-buttom-wrapper{
+       padding: 1em;
+    }
+
+    .buttom-design-con .image-con{
+        flex-direction: column;
+      
+    }
     .buttom-design-con .image-con{
         flex-direction: column;
       
@@ -1756,11 +1752,11 @@ footer .socials-con {
         flex-wrap: wrap;
         animation: fadeIn 3s;
     }
-    .design .buttom-design-con {
+    .portfolio .buttom-design-con {
         padding: 1em;
         margin-top: 1em;
     }
-    .design .buttom-design-con .design-buttom-wrapper:nth-child(3){
+    .portfolio .buttom-design-con .design-buttom-wrapper:nth-child(3){
         flex-direction: column;
        }
     
