@@ -118,7 +118,7 @@ const cardContainer = document.querySelector('.testimonial-card-con');
 let scrollPosition = 0;
 
 prevButton.addEventListener("click", () => {
-    scrollPosition -= 320; // Adjust the value to control the scroll distance
+    scrollPosition -= 320; 
     if (scrollPosition < 0) {
         scrollPosition = 0;
     }
@@ -140,6 +140,36 @@ nextButton.addEventListener("click", () => {
     });
 });
 
+
+const proprevButton = document.querySelector(".pro-left-arrow");
+const pronextButton = document.querySelector(".pro-right-arrow");
+const procardContainer = document.querySelector(".buttom-design-con");
+
+let proscrollPosition = 0;
+
+proprevButton &&
+  proprevButton.addEventListener("click", () => {
+    proscrollPosition -= 320;
+    if (proscrollPosition < 0) {
+      proscrollPosition = 0;
+    }
+    procardContainer.scrollTo({
+      left: proscrollPosition,
+      behavior: "smooth",
+    });
+  });
+
+// Function to scroll to the next card
+pronextButton.addEventListener("click", () => {
+    proscrollPosition += 320; // Adjust the value to control the scroll distance
+    if (proscrollPosition > procardContainer.scrollWidth - procardContainer.clientWidth) {
+        proscrollPosition = procardContainer.scrollWidth - procardContainer.clientWidth;
+    }
+    procardContainer.scrollTo({
+        left: proscrollPosition,
+        behavior: "smooth"
+    });
+});
 
 
 

@@ -14,6 +14,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid; */
+    
 }
 
 .dark{
@@ -32,7 +34,7 @@ body{
 font-family: 'Raleway', sans-serif;
 scroll-behavior: smooth;
 background-color: var(--primary);
-
+overflow-x: hidden;
 }
 
 
@@ -834,7 +836,7 @@ margin-right: .5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4em 0;
+    margin:  0;
     padding: 1em 6em;
 }
 
@@ -876,59 +878,94 @@ margin-right: .5em;
     animation: fadeIn 3s;
 }
 
-.design .buttom-design-con {
+.portfolio {
+    position: relative;
     background-color: var(--secondary);
     border-radius: 50px 0px 50px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    padding: 2em 7em;
-    margin-top: 2em;
-    overflow: hidden;
     
 }
-.design .buttom-design-con h2{
+.portfolio .arrows{
+   position: absolute;
+   top: 5em;
+    font-size: 46px;
+    z-index: 9;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    color: white;
+   
+
+}
+.portfolio .pro-left-arrow, .pro-right-arrow{
+   cursor: pointer;
+   width: 46px;
+   height: 46px;
+}
+
+.portfolio .buttom-design-con {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+   transition: transform 0.3s ease;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+   
+    
+    
+}
+
+.portfolio .buttom-design-con .design-buttom-wrapper{
+    scroll-snap-align: start;
+    padding: 1em 7em;
+    width: 100%;
+}
+
+
+
+
+.portfolio.buttom-design-con h2{
    text-align: start;
    margin: .5em 0;
    color: white;
 
 }
-.design .buttom-design-con p{
+.portfolio .buttom-design-con h3{
+   text-align: center;
+   margin: .5em 0;
+   color: white;
+
+}
+.portfolio .buttom-design-con p{
    margin-bottom: 1em;
 
 }
 
 .buttom-design-con .image-con{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    gap: 20px;
+    
 }
-.buttom-design-con .image-con img{
+.buttom-design-con .design-buttom-wrapper .image-con img{
   max-width: 550px;
   min-width: 200px;
   animation: fadeInLeft 1s;
  
 }
 
-.buttom-design-con .arrows{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    z-index: 9;
-}
-.buttom-design-con .arrows .fa-angle-left{
+/* .buttom-design-con .fa-angle-left{
    position: absolute;
-   left: 0;
+   left: 1em;
 }
-.buttom-design-con .arrows .fa-angle-right{
+.buttom-design-con .fa-angle-right{
     position: absolute;
-    right: 0;
-}
+    right: 1em;
+} */
 
 .buttom-design-con .skills-con {
     margin: 1em 0;
@@ -948,7 +985,7 @@ color: var(--paragraph);
 font-size: 14px;
 }
 .testimonials {
-    padding: 2em 4em;
+    padding: 2em;
 }
 .testimonials h2{
     color: var(--text);
@@ -1558,6 +1595,24 @@ footer .socials-con {
         flex-direction: column;
         gap: 2em;
     }
+    .design .buttom-design-con {
+       flex-direction: column;
+        overflow: hidden;
+        gap: 20px;
+    }
+    .design .buttom-design-con .design-buttom-wrapper{
+        scroll-snap-align: center;
+        padding: 2em;
+    
+    }
+    
+   
+
+    .design .buttom-design-con .design-buttom-wrapper:nth-child(3){
+ gap: 30px;
+
+}
+   
 
     /* .design-content-con .design-image-con {
         width: 70px;
@@ -1605,9 +1660,7 @@ footer .socials-con {
         padding: 2em;
     }
 
-    .question .question-con {
-       
-    }
+  
    
     .question .left {
         animation: fadeInDown 1s;
@@ -1693,7 +1746,7 @@ footer .socials-con {
       
     }
     .buttom-design-con .image-con img{
-        width: 400px;
+        width: 100%;
     }
 
     .buttom-design-con .skills-con {
@@ -1707,6 +1760,15 @@ footer .socials-con {
         padding: 1em;
         margin-top: 1em;
     }
+    .design .buttom-design-con .design-buttom-wrapper:nth-child(3){
+        flex-direction: column;
+       }
+    
+    /* .design .buttom-design-con .design-buttom-wrapper:nth-child(3) .image-con{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+       } */
 
     .testimonials {
         padding: 1em;
