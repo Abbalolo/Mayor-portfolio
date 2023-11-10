@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid; */
+    scroll-behavior: smooth;
     
 }
 
@@ -924,7 +925,7 @@ margin-right: .5em;
 
 .portfolio .buttom-design-con .design-buttom-wrapper{
     scroll-snap-align: start;
-    padding: 1em 7em;
+    padding: 1em 6em;
     width: 100%;
 }
 
@@ -1637,6 +1638,10 @@ footer .socials-con {
 
     }
 
+    .question .right img{
+   display: none;
+}
+
     .connect .left {
         width: 100%;
     }
@@ -1654,11 +1659,11 @@ footer .socials-con {
     }
 
 
-
+/* 
     .quest-p {
-    font-size: 16px;
+    font-size: 12px;
 
-}
+} */
 
   
     .footer-content .content-con{
