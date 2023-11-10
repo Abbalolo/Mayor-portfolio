@@ -1048,13 +1048,26 @@ margin-top: .5em;
    margin: 1em 0;
    font-size: 20px;
    color: var(--text);
+    display: flex;
+    justify-content: center;
+   
+}
+.testimonials .arrow-con i{
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
 }
 
 .testimonials .fa-arrow-left-long {
+       background-color: var(--secondary);
     margin-right: 10px;
     cursor: pointer;
 }
 .testimonials .fa-arrow-right-long {
+       background-color: var(--secondary2);
     margin-left: 10px;
     cursor: pointer;
 
@@ -1281,12 +1294,26 @@ margin-bottom: .5em;
 .footer-content .content-con .flex span{
 background-color: var(--secondary2);
 color: var(--secondary);
-padding: .8em;
+width: 45px;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
 border-radius: 50%;
-font-weight: 600;
+font-family: 'inter', sans-serif;
+font-weight: 700;
+font-size: 22px;
+letter-spacing: 1px;
+
+}
+.footer-content .content-con .flex p{
+  font-weight: 700;
+    font-size: 18px;
+
 }
 .footer-content .content-con  p{
     color: white;
+  
 }
 
 
@@ -1367,8 +1394,15 @@ footer .socials-con {
      color: white;
      
  }
- footer h5{
+ footer .coppyright{
+display: flex;
+justify-content: space-between;
+gap: 10px;
+     
+ }
+ footer .coppyright h5{
      color: white;
+     font-weight: 400;
      
  }
 
@@ -1421,6 +1455,9 @@ footer .socials-con {
     .main .hero2 {
         margin:1em 1em 0 1em;
     }
+    .main .left-con  {
+        margin-top: 3em;
+   }
     .main .left-con h1 {
         font-size: 30px;
         color: var(--text);
@@ -1699,6 +1736,10 @@ footer .socials-con {
         flex-direction: column;
     }
 
+        .main .left-con  {
+        margin-top: 0em;
+   }
+
     /* .education {
        padd: 1em;
     } */
@@ -1820,6 +1861,11 @@ footer .socials-con {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+
+     footer .coppyright{
+flex-direction: column;
+     
+ }
 
 
     
